@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+
+    <script src="js/barra.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/linea.js"></script>
+    <script src="js/barraH.js"></script>
+
+
+
+
+
+    <title>Educación Virtual en Ecuador</title>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 id="ecu">Ecuador</h1>
+                    </div>
+                </div>
+                <img src="img/intro.png" alt="">
+                <div class="sidebar">
+                    <a href="conceptos.html"><i class="fa fa-fw fa-home"></i> Conceptos</a>
+                    <a href="index.html"><i class="fa fa-fw fa-wrench"></i> Estadisticas</a>
+                </div>
+                <footer>
+                    <div class="sidebar-footer">
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                            <span class="badge badge-pill badge-warning notification">3</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope"></i>
+                            <span class="badge badge-pill badge-success notification">7</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-cog"></i>
+                            <span class="badge-sonar"></span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+            <div class="col-sm-10">
+                <h1>Impacto de la Educación Virtual en Ecuador</h1>
+                <hr>
+
+                <section class="tar">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card" id="poblacion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Población total <br>17.325.291</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <i class="fa fa-male"></i>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p> Hombre <br> 8.588.514</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <i class="fa fa-female"></i>
+
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <p>Mujer <br> 8.736.771</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <p>Movil<br> 60%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Equipamiento tecnológico del hogar
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Porcentaje de población con celular y redes sociales
+
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="barra"></canvas>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Reporte de cantidad de usuarios de internet de diferentes fuentes
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="linea"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Porcentaje de hogares con conexión a internet por regiones
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="barraH"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

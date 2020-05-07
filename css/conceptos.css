@@ -1,0 +1,94 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.col-sm-10 {
+    background-color: #EFEFEF;
+}
+
+.col-sm-2 {
+    background-color: #08090E;
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+}
+
+img {
+    margin-top: 2em;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    margin-top: 2em;
+    list-style: none;
+}
+
+#tituloEcu {
+    background-color: #1CAF9A;
+    color: #f1f1f1;
+}
+
+.sidebar{
+    margin-top: 2em;
+}
+.sidebar a {
+    display: block;
+    padding: 6px 8px 6px 16px;
+    font-size: 20px;
+    color: #818181;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    background-color: #1CAF9A;
+    overflow: hidden;
+    color: #f1f1f1;
+}
+
+
+/*Footer Sidebar*/
+.sidebar-footer{
+    margin-top: 2em;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+/*SECTION*/
+section{
+    text-align: justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*IMGS*/
+#intro{
+    margin-top: 1em;
+}
+img{
+    display: block;
+    margin: auto;
+}
+
+#vd{
+    width: 60%;
+    height: auto;
+}
+
+
+/*CARDS*/
+
+.card-body{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    background-color: #1CAF9A;
+    font-weight:bolder;
+}
